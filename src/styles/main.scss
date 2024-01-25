@@ -1,5 +1,63 @@
-$bgcolor: rgb(145, 32, 211);
+@use 'variaveis';
+@use 'hero';
+
+@font-face {
+    font-family: 'Bungee';
+    src: url('https://fonts.googleapis.com/css2?family=Bungee&family=Dela+Gothic+One&family=Poppins:wght@300&family=Roboto+Condensed&family=Roboto+Mono:wght@300;400&family=Roboto:wght@300;700&family=Rubik&family=Ubuntu:wght@300&display=swap');
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bungee', sans-serif;
+}
+
+$corDeFundo: #23252b;
+$corTextoPrincipal: #ffffff;
 
 body {
-    background-color: $bgcolor;
+    background-color: $corDeFundo;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: variaveis.$corTextoPrincipal;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.tittle--big {
+    @include title(44px);
+}
+
+.tittle {
+    @include title(40px);
+}
+
+.tittle--small {
+    @include title(28px);
+}
+
+.link-text {
+    @include text(18px);
+    color: variaveis.$corTextoPrincipal;
+    text-decoration: underline
 }
