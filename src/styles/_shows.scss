@@ -4,21 +4,51 @@
     width: 100vw;
     height: 90vh;
     background-image: url(../images/base/bg_base.jpg);
-}
+    padding: 0;
 
-.story-intro {
-    padding: 2em;
+    &__tabmenu {
+        display: flex;
+        justify-content: center;
+        position: relative;
 
-        img {
-            width: 420px;
+        a {
+            display: block;
+            padding: 0.5em 1em;
+            text-decoration: none;
         }
 
-    &__text {
-        margin-bottom: 2em;
+            &__item {
+                position: relative;
+            }
+
+            &__item::before {
+                content: "/";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+            }
     }
 
-        &--text {
-            padding-left: 12em;
+    img {
+        width: 577px;
+        margin-bottom: 2em;
+    }
+    
+
+    &__story-intro {
+
+        &__text1 {
+            padding-left: 2em;
             margin-bottom: 2em;
         }
+    
+            &--text2 {
+                padding-left: 12em;
+                margin-bottom: 2em;
+            }
+    }
 }
+
+

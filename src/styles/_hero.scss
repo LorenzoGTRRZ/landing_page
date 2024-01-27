@@ -13,6 +13,10 @@
     &__content {
         width: 740px;
 
+        a {
+            text-decoration: none;
+        }
+
 
         &__branding {
             max-width: 520px;
