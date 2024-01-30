@@ -16,14 +16,17 @@
     list-style: none;
 }
 
+
 $corDeFundo: #23252b;
 $corTextoPrincipal: #ffffff;
 
 body {
     background-color: $corDeFundo;
+    max-width: 100%; 
+    overflow-x: hidden; 
 }
 
-@mixin text($fontSize: 16px) {
+@mixin text($fontSize: 12px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
     color: variaveis.$corTextoPrincipal;
@@ -69,6 +72,12 @@ body {
 
 .link-text {
     @include text(18px);
+    color: variaveis.$corTextoPrincipal;
+    text-decoration: underline
+}
+
+.link-text--medium {
+    @include text(16px);
     color: variaveis.$corTextoPrincipal;
     text-decoration: underline
 }
