@@ -33,49 +33,103 @@
     <section class="shows">
         <div class="shows__tabmenu">
             <ul class="shows__tabmenu">
-                <li class="shows__tabmenu">
-                    <a href="#" class="tittle--small">Introdução</a>
+                <li class="shows__tabmenu__list--is-active" id="introTab">
+                    <a data class="tittle--small">Introdução</a>
                 </li>
-                <li class="shows__tabmenu__item">
-                    <a href="#" class="tittle--small">Episodio</a>
+                <li class="shows__tabmenu__list--item" id="episodeTab">
+                    <a class="tittle--small">Episodio</a>
                 </li>
-                <li class="shows__tabmenu__item">
-                    <a href="#" class="tittle--small">Edição especial da NHK</a>
+                <li class="shows__tabmenu__list--item" id="nhkTab">
+                    <a class="tittle--small">Edição especial da NHK</a>
                 </li>
             </ul>
         </div>
-            <picture> 
-                <img src="../landing_page/dist/images/base/intro_catch_pc.png" alt="sada" class="shows__tabmenu">
-            </picture>
-            <div class="shows__story-intro__text1">
-                <p class="shows__story-intro__text1 text--big">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eius.
-                    <br>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid.
-                    <br>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quis.
-                    <br>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam vero nesciunt.
-                </p>
-                <p class="shows__story-intro--text2 text--big">
-                    ——Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odit repellendus.
-                    <br>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt aut sapiente quo.
-                    <br>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure accusamus.
-                    <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nobis.
-                    <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus.
-                </p>
-                <p class="shows__story-intro__text1 text--big">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nobis.
-                    <br>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam.
-                </p>
-            </div>
+            <section class="shows">
+                <div class="shows__story-intro" id="introSection">
+                    <picture> 
+                        <img src="../landing_page/dist/images/base/intro_catch_pc.png" alt="sada" class="shows__tabmenu">
+                    </picture>
+                    <p class="shows__story-intro__text1 text--big">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eius.
+                        <br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid.
+                        <br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quis.
+                        <br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam vero nesciunt.
+                    </p>
+                    <p class="shows__story-intro--text2 text--big">
+                        ——Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odit repellendus.
+                        <br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt aut sapiente quo.
+                        <br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure accusamus.
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nobis.
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus.
+                    </p>
+                    <p class="shows__story-intro__text1 text--big">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nobis.
+                        <br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam.
+                    </p>
+                </div>
+                <div class="shows__story-episode shows__story-episode--hidden" id="episodeSection">
+                    <article class="shows__story-episode">
+                        <h3 class="shows__story-episode__visual tittle--medium">
+                            <span class="tittle--medium-red">Episódio 94:</span> Em direção à árvore naquela colina
+                        </h3>
+                        <picture class="shows__story-episode"> 
+                            <img src="../landing_page/dist/images/base/episode_94.jpg" alt="sada" class="shows__tabmenu">
+                        </picture>
+                        <p class="shows__story-episode__visual text--big">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eius.
+                            <br>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquid.
+                            <br>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quis.
+                            <br>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam vero nesciunt.
+                        </p>
+                    </article>
+                </div>
+                <div class="shows__story-nhk shows__story-nhk--hidden" id="nhkSection">
+                    <article class="shows__story-nhk">
+                        <picture class="shows__story-nhk"> 
+                            <img src="../landing_page/dist/images/base/episode_final_01.jpg" alt="sada" class="shows__tabmenu">
+                        </picture>
+                        <h3 class="shows__story-nhk__visual tittle--medium">
+                            Parte final (primeira parte)
+                        </h3>
+                        <p class="shows__story-nhk__visual text--big">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quis suscipit tempore quia qu!
+                            <br>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis aperiam atque, commodi qu
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae iste laudantium quos ipsum 
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ab aperiam expedita inventore obc
+                        </p>
+                        <picture class="shows__story-nhk"> 
+                            <img src="../landing_page/dist/images/base/episode_final_02.jpg" alt="sada" class="shows__tabmenu">
+                        </picture>
+                        <h3 class="shows__story-nhk__visual tittle--medium">
+                            Parte final (segunda parte)
+                        </h3>
+                        <p class="shows__story-nhk__visual text--big">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eius.
+                            <br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quis suscipit tempore quia qu!
+                            <br>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis aperiam atque, commodi q
+                        </p>
+                    </article>
+                </div>
+            </section>
         </section>
+        <script src="./src/main.js"></script>
     </body>
 </html>

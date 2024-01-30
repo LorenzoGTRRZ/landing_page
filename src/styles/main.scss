@@ -35,7 +35,7 @@ body {
 }
 
 .text--big {
-    @include text(18px);
+    @include text(20px);
 }
 
 .text {
@@ -48,6 +48,15 @@ body {
 
 .tittle--big {
     @include title(44px);
+}
+
+.tittle--medium {
+    @include title(30px);
+}
+
+.tittle--medium-red{
+    @include title(30px);
+    color: red;
 }
 
 .tittle {

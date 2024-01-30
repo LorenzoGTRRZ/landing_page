@@ -2,42 +2,60 @@
 
 .shows {
     width: 100vw;
-    height: 90vh;
+    height: 200vh;
     background-image: url(../images/base/bg_base.jpg);
     padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &__tabmenu {
         display: flex;
         justify-content: center;
         position: relative;
+        margin-bottom: 40px;
 
         a {
             display: block;
             padding: 0.5em 1em;
             text-decoration: none;
+            margin-top: 80px;
         }
 
-            &__item {
+        &__list{
+            text-transform: uppercase;
+
+            &--is-active a {
+                color: red;
+                transition: color 0.5s ease;
+            }
+
+            &--item {
                 position: relative;
             }
 
-            &__item::before {
+            &--item::before {
                 content: "/";
                 position: absolute;
                 left: 0;
-                top: 50%;
+                bottom: 5px;
                 transform: translate(-50%, -50%);
                 color: #fff;
             }
+        }
     }
 
     img {
         width: 577px;
         margin-bottom: 2em;
     }
-    
 
     &__story-intro {
+        display: block;
+        margin-top: 80px;
+
+        &--hidden {
+            display: none;
+        }
 
         &__text1 {
             padding-left: 2em;
@@ -48,6 +66,49 @@
                 padding-left: 12em;
                 margin-bottom: 2em;
             }
+    }
+
+    &__story-episode {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        img {
+            width: 840px;
+        }
+
+        &__visual {
+            align-self: flex-start;
+            margin-bottom: 50px;
+        }
+
+        &--hidden {
+            display: none;
+        }
+
+    }
+
+    &__story-nhk {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        img {
+            width: 840px;
+        }
+
+        &__visual {
+            align-self: flex-start;
+            margin-bottom: 50px;
+        }
+
+        &--hidden {
+            display: none;
+        }
     }
 }
 
