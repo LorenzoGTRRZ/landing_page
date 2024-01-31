@@ -8,6 +8,12 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('caminho/para/arquivo-da-fonte.woff2') format('woff2'),
+        url('caminho/para/arquivo-da-fonte.woff') format('woff');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -80,4 +86,5 @@ body {
     @include text(16px);
     color: variaveis.$corTextoPrincipal;
     text-decoration: underline
+    
 }
