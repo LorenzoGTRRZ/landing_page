@@ -1,17 +1,12 @@
 @use 'variaveis';
 @use 'hero';
 @use 'shows';
+@use 'header';
 
 @font-face {
     font-family: 'Bungee';
     src: url('https://fonts.googleapis.com/css2?family=Bungee&family=Dela+Gothic+One&family=Poppins:wght@300&family=Roboto+Condensed&family=Roboto+Mono:wght@300;400&family=Roboto:wght@300;700&family=Rubik&family=Ubuntu:wght@300&display=swap');
     font-weight: 400;
-}
-
-@font-face {
-    font-family: 'MinhaFonte';
-    src: url('caminho/para/arquivo-da-fonte.woff2') format('woff2'),
-        url('caminho/para/arquivo-da-fonte.woff') format('woff');
 }
 
 * {
@@ -83,8 +78,7 @@ body {
 }
 
 .link-text--medium {
-    @include text(16px);
+    @include text(13px);
     color: variaveis.$corTextoPrincipal;
     text-decoration: underline
-    
 }

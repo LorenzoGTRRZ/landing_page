@@ -1,12 +1,13 @@
 @use 'variaveis';
 
 .shows {
-    background-image: url(../images/base/bg_base.jpg);
-    width: 100vw;
-    background-size: cover;
+    background-image: url(/landing_page/dist/images/footer_fog.png), url(/landing_page/dist/images/base/bg_light.png), url(../images/base/bg_base.jpg);
+    width: 100%;
+    background-size: auto,100% auto,cover;
     background-repeat: no-repeat;
-    background-position: center;
     background-attachment: fixed;
+    background-position: left bottom,right top,center;
+    background-repeat: repeat-x,no-repeat,no-repeat;
 
     &__tabmenu {
         display: flex;
@@ -153,18 +154,15 @@
         &__menu {
             align-items: center;
             display: block;
-            padding-left: 70px;
+            padding-left: 100px;
         }
 
         &__mainmenu {
             display: flex;
 
-            &__link {
-                padding-right: 1rem; 
+            &__link, a {
+                padding-right: 1rem;
                 display: block;
-            }
-
-            a {
                 text-decoration: none;
             }
         }

@@ -1,0 +1,43 @@
+@use 'variaveis';
+
+.header {
+    z-index: 1100;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0,0,0,.7);
+
+    &__logo{
+        position: absolute;
+        left: 10px;
+        top: 20px;
+        width: 27vw;
+        max-width: 360px;
+
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__mainmenu {
+        display: flex;
+
+        &__link, a {
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding-left: 0.7em;
+            padding-right: 0.7em;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
