@@ -1,7 +1,7 @@
 @use 'variaveis';
 
 .shows {
-    background-image: url(/landing_page/dist/images/footer_fog.png), url(/landing_page/dist/images/base/bg_light.png), url(../images/base/bg_base.jpg);
+    background-image: url(../images/base/footer_fog.png), url(../images/base/bg_light.png), url(../images/base/bg_base.jpg);
     width: 100%;
     background-size: auto,100% auto,cover;
     background-repeat: no-repeat;
